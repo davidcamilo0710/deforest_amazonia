@@ -6,6 +6,7 @@ This project analyzes the evolution of deforestation in the **Jamanxim National 
   <i>Evolution of deforestation in the Jamanxim National Forest (2000 vs. 2019). The areas in red indicate detected deforestation.</i><br>
   <img width="303" height="667" alt="Annual and Cumulative Deforestation Graph" src="https://github.com/user-attachments/assets/17f21adb-97f7-4d29-be49-3bb54bcab9ff" />
 </p>
+![deforest](https://github.com/user-attachments/assets/ad7f2f92-0c97-4dbc-8a51-2a6d3cff5d83)
 
 ---
 
