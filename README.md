@@ -2,13 +2,18 @@
 
 This project analyzes the evolution of deforestation in the **Jamanxim National Forest**, located in the Brazilian Amazon, over a 20-year period (2000-2019). Using a satellite image processing pipeline, this work identifies and quantifies deforested areas to monitor the environmental impact in this critical region.
 
-<p align="center">
-  <i>Evolution of deforestation in the Jamanxim National Forest (2000 vs. 2019). The areas in red indicate detected deforestation.</i><br>
-  <img width="303" height="667" alt="Annual and Cumulative Deforestation Graph" src="https://github.com/user-attachments/assets/17f21adb-97f7-4d29-be49-3bb54bcab9ff" />
-</p>
-![deforest](https://github.com/user-attachments/assets/ad7f2f92-0c97-4dbc-8a51-2a6d3cff5d83)
-
-![deforest](https://github.com/user-attachments/assets/88f5cb71-0f34-4990-a150-0bb5dcd9a278)
+<table>
+  <tr>
+    <td align="center">
+      <i>Evolution of deforestation in the Jamanxim National Forest (2000 vs. 2019).<br>
+      The areas in red indicate detected deforestation.</i><br>
+      <img width="303" height="667" alt="Annual and Cumulative Deforestation Graph" src="https://github.com/user-attachments/assets/17f21adb-97f7-4d29-be49-3bb54bcab9ff" />
+    </td>
+    <td align="right">
+      <img src="https://github.com/user-attachments/assets/88f5cb71-0f34-4990-a150-0bb5dcd9a278" alt="Deforestation GIF" width="250" />
+    </td>
+  </tr>
+</table>
 
 ---
 
