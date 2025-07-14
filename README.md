@@ -8,6 +8,8 @@ This project analyzes the evolution of deforestation in the **Jamanxim National 
 </p>
 ![deforest](https://github.com/user-attachments/assets/ad7f2f92-0c97-4dbc-8a51-2a6d3cff5d83)
 
+![deforest](https://github.com/user-attachments/assets/88f5cb71-0f34-4990-a150-0bb5dcd9a278)
+
 ---
 
 ## Methodology
