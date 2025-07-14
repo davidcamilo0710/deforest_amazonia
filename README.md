@@ -4,7 +4,7 @@ This project analyzes the evolution of deforestation in the **Jamanxim National 
 
 <p align="center">
   <i>Evolution of deforestation in the Jamanxim National Forest (2000 vs. 2019). The areas in red indicate detected deforestation.</i><br>
-  <img src="URL_IMAGEN_1_COMPARATIVA_AÑOS" alt="Deforestation Comparison 2000-2019"/>
+  <img width="404" height="889" alt="Annual and Cumulative Deforestation Graph" src="https://github.com/user-attachments/assets/17f21adb-97f7-4d29-be49-3bb54bcab9ff" />
 </p>
 
 ---
@@ -35,7 +35,7 @@ The following graph shows both the annual deforestation (yellow bars) and the cu
 
 <p align="center">
   <i>Comparison of annual vs. cumulative deforestation.</i><br>
-  <img width="404" height="889" alt="Annual and Cumulative Deforestation Graph" src="https://github.com/user-attachments/assets/17f21adb-97f7-4d29-be49-3bb54bcab9ff" />
+  <img width="539" height="588" alt="Annual and Cumulative Deforestation Graph" src="https://github.com/user-attachments/assets/800ac360-6f14-41b2-b9eb-3e946fd6b4f3" />
 </p>
 
 ---
