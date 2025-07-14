@@ -10,7 +10,7 @@ This project analyzes the evolution of deforestation in the **Jamanxim National 
       <img width="303" height="667" alt="Annual and Cumulative Deforestation Graph" src="https://github.com/user-attachments/assets/17f21adb-97f7-4d29-be49-3bb54bcab9ff" />
     </td>
     <td align="right">
-      <img src="https://github.com/user-attachments/assets/88f5cb71-0f34-4990-a150-0bb5dcd9a278" alt="Deforestation GIF" width="250" />
+      <img src="https://github.com/user-attachments/assets/640c2cc5-f4c5-4545-b004-73d52d56c0a1" alt="Deforestation GIF" width="250" />
     </td>
   </tr>
 </table>
