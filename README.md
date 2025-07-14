@@ -1,59 +1,59 @@
-# Monitoreo de Deforestación en la Amazonía (2000-2019)
+# Deforestation Monitoring in the Amazon (2000-2019)
 
-[cite_start]Este proyecto analiza la evolución de la deforestación en el **Bosque Nacional Jamanxim**, en la Amazonía brasileña, durante un período de 20 años (2000-2019). [cite: 4] [cite_start]Utilizando un pipeline de procesamiento de imágenes satelitales, se identifican y cuantifican las áreas deforestadas para monitorear el impacto ambiental en esta región crítica. [cite: 4, 13]
+This project analyzes the evolution of deforestation in the **Jamanxim National Forest**, located in the Brazilian Amazon, over a 20-year period (2000-2019). Using a satellite image processing pipeline, this work identifies and quantifies deforested areas to monitor the environmental impact in this critical region.
 
 <p align="center">
-  <i>Evolución de la deforestación en el Bosque Nacional Jamanxim (2000 vs. 2019). Las áreas en rojo indican la deforestación detectada.</i><br>
-  <img src="URL_IMAGEN_1_COMPARATIVA_AÑOS" alt="Comparativa de Deforestación 2000-2019"/>
+  <i>Evolution of deforestation in the Jamanxim National Forest (2000 vs. 2019). The areas in red indicate detected deforestation.</i><br>
+  <img src="URL_IMAGEN_1_COMPARATIVA_AÑOS" alt="Deforestation Comparison 2000-2019"/>
 </p>
 
 ---
 
-## Metodología
+## Methodology
 
-[cite_start]El análisis se realizó mediante un pipeline automatizado en Python que procesa imágenes satelitales anuales del [NASA Earth Observatory](https://earthobservatory.nasa.gov/). [cite: 33, 26] El objetivo es segmentar las áreas no boscosas (deforestadas) de las que conservan su vegetación.
+The analysis was performed using an automated Python pipeline that processes annual satellite images from the [NASA Earth Observatory](https://earthobservatory.nasa.gov/). The goal is to segment non-forested (deforested) areas from those that still have vegetation cover.
 
-El proceso se compone de las siguientes etapas clave:
+The process consists of the following key stages:
 
-1.  [cite_start]**Preprocesamiento Visual**: Se aplican técnicas como la ecualización adaptativa de histograma (**CLAHE**) y el **filtro bilateral** para mejorar el contraste y reducir el ruido de las imágenes, preservando los bordes entre zonas boscosas y deforestadas. [cite: 51, 40]
-2.  [cite_start]**Detección de Nubes**: Se implementó un algoritmo que utiliza los espacios de color **HSV** y **LAB** junto con un análisis de gradiente para crear una máscara y excluir las nubes, evitando que interfieran en el cálculo del área. [cite: 55, 56]
-3.  [cite_start]**Segmentación de Áreas Deforestadas**: La identificación de la deforestación se basa principalmente en la **segmentación por color** en los espacios **LAB** y **HSV**. [cite: 64] [cite_start]Estos espacios permiten diferenciar eficazmente los tonos de suelo expuesto (marrones/amarillos) de la vegetación densa (verdes). [cite: 67, 69]
-4.  [cite_start]**Refinamiento Morfológico**: Para mejorar la precisión, se detectan **estructuras lineales** (carreteras) usando la **Transformada de Hough** y se aplican operaciones morfológicas (apertura y cierre) para limpiar la máscara final de ruido y conectar áreas fragmentadas. [cite: 78, 83]
-5.  [cite_start]**Cálculo de Área**: Finalmente, se cuenta el número de píxeles clasificados como deforestados en la máscara binaria final y se convierte a kilómetros cuadrados ($km^2$) utilizando una relación de escala calibrada. [cite: 91, 92]
+1.  **Visual Preprocessing**: Techniques such as Contrast Limited Adaptive Histogram Equalization (**CLAHE**) and a **Bilateral Filter** are applied to enhance contrast and reduce noise in the images, while preserving the sharp edges between forested and deforested zones.
+2.  **Cloud Detection**: An algorithm using **HSV** and **LAB** color spaces, combined with gradient analysis, was implemented to create a mask and exclude clouds, preventing them from interfering with area calculations.
+3.  **Segmentation of Deforested Areas**: The identification of deforestation is primarily based on **color segmentation** in the **LAB** and **HSV** color spaces. These spaces effectively differentiate the tones of exposed soil (browns/yellows) from dense vegetation (greens).
+4.  **Morphological Refinement**: To improve accuracy, **linear structures** (like roads) are detected using the **Hough Transform**, and morphological operations (opening and closing) are applied to clean the final mask from noise and connect fragmented areas.
+5.  **Area Calculation**: Finally, the number of pixels classified as deforested in the final binary mask is counted and converted to square kilometers ($km^2$) using a calibrated scaling factor.
 
 ---
 
-## Resultados
+## Results
 
-El análisis cuantitativo revela una tendencia creciente y persistente de la deforestación en la región durante las dos décadas estudiadas.
+The quantitative analysis reveals a persistent and growing trend of deforestation in the region over the two decades studied.
 
-* [cite_start]El área deforestada pasó de **4,002.77 $km^2$** en el año 2000 a **12,957.17 $km^2$** en 2019. [cite: 125]
-* [cite_start]Se identificó un **aumento lineal promedio de 52.15 $km^2$ por año**. [cite: 6, 189]
-* [cite_start]Los años **2017, 2018 y 2019** registraron los niveles más altos de deforestación acumulada, lo que indica una intensificación del problema en el tramo final del período. [cite: 184]
+* The deforested area increased from **4,002.77 $km^2$** in 2000 to **12,957.17 $km^2$** in 2019.
+* An average linear increase of **52.15 $km^2$ per year** was identified.
+* The years **2017, 2018, and 2019** recorded the highest levels of accumulated deforestation, indicating an intensification of the problem towards the end of the period.
 
-El siguiente gráfico muestra tanto la deforestación anual (barras amarillas) como el área acumulada a lo largo del tiempo (línea roja), evidenciando la tendencia general al alza y los picos de deforestación en años específicos.
+The following graph shows both the annual deforestation (yellow bars) and the cumulative area over time (red line), highlighting the general upward trend and the peaks of deforestation in specific years.
 
 <p align="center">
-  <i>Comparación de la deforestación anual vs. la acumulada.</i><br>
-  <img src="URL_IMAGEN_2_GRAFICO_ACUMULADO" alt="Gráfico de Deforestación Anual y Acumulada"/>
+  <i>Comparison of annual vs. cumulative deforestation.</i><br>
+  <img width="404" height="889" alt="Annual and Cumulative Deforestation Graph" src="https://github.com/user-attachments/assets/17f21adb-97f7-4d29-be49-3bb54bcab9ff" />
 </p>
 
 ---
 
 ## Code and Resources
 
-Todos los recursos, incluyendo el código fuente, los datos y el informe detallado del proyecto, están disponibles en este repositorio.
+All resources, including the source code, data, and a detailed project report, are available in this repository.
 
-* **Informe Completo**: Para una descripción exhaustiva de la metodología, los resultados y las conclusiones, puedes consultar el **[artículo del proyecto](https://github.com/davidcamilo0710/deforest_amazonia/blob/main/deforest_amazonia.pdf)**.
-* **Notebook de Análisis**: El código completo del pipeline de procesamiento de imágenes está implementado en un **[Jupyter Notebook](https://github.com/davidcamilo0710/deforest_amazonia/blob/main/src.ipynb)**.
-* [cite_start]**Tecnologías Utilizadas**: El proyecto fue desarrollado en **Python** utilizando librerías como **OpenCV**, **scikit-image**, **NumPy** y **Matplotlib**. [cite: 26-30]
+* **Full Report**: For a comprehensive description of the methodology, results, and conclusions, you can consult the **[project article (in Spanish)](https://github.com/davidcamilo0710/deforest_amazonia/blob/main/deforest_amazonia.pdf)**.
+* **Analysis Notebook**: The complete code for the image processing pipeline is implemented in a **[Jupyter Notebook](https://github.com/davidcamilo0710/deforest_amazonia/blob/main/src.ipynb)**.
+* **Technologies Used**: The project was developed in **Python** using libraries such as **OpenCV**, **scikit-image**, **NumPy**, and **Matplotlib**.
 
 ---
 
-## Conclusión
+## Conclusion
 
-[cite_start]Este estudio demuestra la eficacia de las técnicas de visión por computador para el monitoreo ambiental a gran escala. [cite: 188] [cite_start]La metodología desarrollada es replicable y proporciona una herramienta valiosa para que organizaciones y gobiernos puedan seguir la dinámica de la deforestación, evaluar el impacto de las políticas de conservación y tomar decisiones informadas para proteger ecosistemas vitales como la Amazonía. [cite: 7, 203]
+This study demonstrates the effectiveness of computer vision techniques for large-scale environmental monitoring. The developed methodology is replicable and provides a valuable tool for organizations and governments to track deforestation dynamics, evaluate the impact of conservation policies, and make informed decisions to protect vital ecosystems like the Amazon.
 
-## Autor
+## Author
 
 * **[David Camilo Muñoz Garcia](https://github.com/davidcamilo0710)**
