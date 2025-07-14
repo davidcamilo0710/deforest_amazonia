@@ -35,7 +35,7 @@ The following graph shows both the annual deforestation (yellow bars) and the cu
 
 <p align="center">
   <i>Comparison of annual vs. cumulative deforestation.</i><br>
-  <img width="539" height="588" alt="Annual and Cumulative Deforestation Graph" src="https://github.com/user-attachments/assets/800ac360-6f14-41b2-b9eb-3e946fd6b4f3" />
+  <img width="539" height="588" alt="Annual and Cumulative Deforestation Graph" src="https://github.com/user-attachments/assets/06a76f57-2d91-4770-b8e0-f8a81c9d401b" />
 </p>
 
 ---
